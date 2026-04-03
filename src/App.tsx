@@ -21,6 +21,7 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,6 +84,7 @@ function AppContent({ loaded }: { loaded: boolean }) {
         <ContactSection />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

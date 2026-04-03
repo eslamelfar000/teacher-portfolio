@@ -149,7 +149,7 @@ export default function HeroSection({
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden lg:pt-32 py-20"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-32 py-20 "
       style={{ perspective: "1000px" }}
     >
       {/* Background gradient */}
