@@ -173,7 +173,7 @@ export default function SplitRevealSection() {
     <section
       ref={sectionRef}
       className="relative overflow-hidden"
-      style={{ minHeight: "130vh", background: "hsl(222 25% 4%)" }}
+      style={{ minHeight: "90vh", background: "hsl(222 25% 4%)" }}
     >
       {/* The two panels side by side */}
       <div className="flex flex-col sm:flex-row min-h-screen relative">

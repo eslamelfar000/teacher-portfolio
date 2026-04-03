@@ -74,7 +74,7 @@ export default function LayeredDepthSection() {
     <section
       ref={sectionRef}
       className="relative overflow-hidden"
-      style={{ height: '140vh', background: 'hsl(222 25% 3%)' }}
+      style={{ height: '90vh', background: 'hsl(222 25% 3%)' }}
     >
       {/* LAYER 0 — far background: large gradient nebula */}
       <div

@@ -148,7 +148,7 @@ export default function ProcessSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-32 overflow-hidden"
+      className="relative py-32 pb-52 overflow-hidden"
       style={{ background: 'hsl(222 25% 4%)' }}
     >
       {/* Deep background layer */}
