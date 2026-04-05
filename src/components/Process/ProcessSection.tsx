@@ -1,9 +1,11 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import processData from "./processData.json";
+import processData from "./processData.json"
 
 gsap.registerPlugin(ScrollTrigger);
+
+const STEPS = processData;
 
 export default function ProcessSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -57,7 +59,7 @@ export default function ProcessSection() {
 
       // Cards: each one starts at its own offset and slides into place
       cardRefs.current.forEach((card, i) => {
-        const step = processData[i];
+        const step = STEPS[i];
         if (!card || !step) return;
 
         // Reveal
@@ -82,7 +84,7 @@ export default function ProcessSection() {
         // Parallax at individual depths as you scroll through
         const parallaxAmount = 20 + i * 10;
         gsap.to(card, {
-          y: processData[i].offsetY - parallaxAmount,
+          y: step.offsetY - parallaxAmount,
           ease: "none",
           scrollTrigger: {
             trigger: sectionRef.current,
@@ -117,7 +119,7 @@ export default function ProcessSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-32 pb-52 overflow-hidden"
+      className="relative py-32 overflow-hidden"
       style={{ background: "hsl(222 25% 4%)" }}
     >
       {/* Deep background layer */}
@@ -194,25 +196,33 @@ export default function ProcessSection() {
 
         {/* Cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
-          {processData.map((step, i) => (
+          {STEPS.map((step, i) => (
             <div
               key={step.number}
               ref={(el) => {
-                cardRefs.current[i] = el;
+                if (el) cardRefs.current[i] = el;
               }}
-              className="process-card p-6 border border-[hsl(var(--border))] group-hover:border-[hsl(var(--primary)/0.3)] transition-all duration-300"
-              style={{ opacity: 0, borderRadius: "4px" }}
+              className="relative p-8 border border-[hsl(var(--border))] group"
+              style={{
+                borderRadius: "4px",
+                background: "hsl(222 25% 5%)",
+                opacity: 0,
+                willChange: "transform",
+              }}
             >
-              {/* Number */}
+              {/* Top accent */}
               <div
-                style={{
-                  color: step.color,
-                  textShadow: `0 0 20px ${step.color}40`,
-                }}
+                className="absolute top-0 left-0 right-0 h-0.5 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+                style={{ background: step.color }}
+              />
+
+              {/* Number */}
+              <span
                 className="font-mono text-xs tracking-widest block mb-6"
+                style={{ color: `${step.color}60` }}
               >
                 {step.number}
-              </div>
+              </span>
 
               {/* Icon */}
               <div
