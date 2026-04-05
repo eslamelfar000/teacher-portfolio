@@ -1,26 +1,26 @@
 [
   {
-    "image": "public/images/testimonial/app1.jpeg"
+    "image": "/images/testimonial/app1.jpeg"
   },
   {
-    "image": "public/images/testimonial/app2.jpeg"
+    "image": "/images/testimonial/app2.jpeg"
   },
   {
-    "image": "public/images/testimonial/app3.jpeg"
+    "image": "/images/testimonial/app3.jpeg"
   },
   {
-    "image": "public/images/testimonial/app4.jpeg"
+    "image": "/images/testimonial/app4.jpeg"
   },
   {
-    "image": "public/images/testimonial/app5.jpeg"
+    "image": "/images/testimonial/app5.jpeg"
   },
   {
-    "image": "public/images/testimonial/app6.jpeg"
+    "image": "/images/testimonial/app6.jpeg"
   },
   {
-    "image": "public/images/testimonial/app7.jpeg"
+    "image": "/images/testimonial/app7.jpeg"
   },
   {
-    "image": "public/images/testimonial/app8.jpeg"
+    "image": "/images/testimonial/app8.jpeg"
   }
 ]
