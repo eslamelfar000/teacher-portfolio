@@ -70,6 +70,7 @@ function TestimonialCard({
       </div>
 
       {/* Dialog for full-size image */}
+      {/* TODO: Add dialog for full-size image */}
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className="max-w-4xl max-h-[80vh] w-full p-0 border-0 bg-transparent">
           <div className="relative h-full overflow-y-auto bg-[#0D0F11] p-4 rounded-2xl">
