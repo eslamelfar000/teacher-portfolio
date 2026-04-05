@@ -1,0 +1,29 @@
+{
+  "layers": [
+    {
+      "index": 0,
+      "speed": 0.1
+    },
+    {
+      "index": 1,
+      "speed": 0.25
+    },
+    {
+      "index": 2,
+      "speed": 0.45
+    },
+    {
+      "index": 3,
+      "speed": 0.7
+    },
+    {
+      "index": 4,
+      "speed": 1.1
+    }
+  ],
+  "content": {
+    "title": "Multi-Dimensional Learning",
+    "subtitle": "Depth & Perspective",
+    "description": "Experience language learning through layered visual metaphors representing different aspects of fluency."
+  }
+}

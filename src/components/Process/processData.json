@@ -1,0 +1,34 @@
+[
+  {
+    "number": "01",
+    "title": "Assess",
+    "description": "We begin with a comprehensive language assessment to identify your strengths, weaknesses, and specific goals.",
+    "icon": "◎",
+    "color": "hsl(185 100% 55%)",
+    "offsetY": 0
+  },
+  {
+    "number": "02",
+    "title": "Plan",
+    "description": "I design a personalized learning roadmap. A clear curriculum and timeline for what success looks like.",
+    "icon": "▱",
+    "color": "hsl(340 85% 62%)",
+    "offsetY": 60
+  },
+  {
+    "number": "03",
+    "title": "Learn",
+    "description": "Engaging, interactive lessons focused on practical application. We practice, correct, and build confidence.",
+    "icon": "◈",
+    "color": "hsl(270 60% 60%)",
+    "offsetY": 20
+  },
+  {
+    "number": "04",
+    "title": "Achieve",
+    "description": "You reach your language goals, whether it's passing an exam, or speaking fluently.",
+    "icon": "✦",
+    "color": "hsl(150 60% 45%)",
+    "offsetY": 80
+  }
+]

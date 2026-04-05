@@ -55,6 +55,18 @@
     animation-duration: 0.2s;
     animation-fill-mode: both;
   }
+  .data-\[state\=open\]\:zoom-in-95[data-state="open"] {
+    animation-name: zoom-in-95;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-fill-mode: both;
+  }
+  .data-\[state\=closed\]\:zoom-out-95[data-state="closed"] {
+    animation-name: zoom-out-95;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -73,6 +85,7 @@
   --color-muted-foreground: hsl(var(--muted-foreground));
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
   --font-sans: var(--app-font-sans);
   --font-serif: var(--app-font-serif);
 }
@@ -92,6 +105,7 @@
   --muted-foreground: 210 15% 50%;
   --accent: 340 85% 62%;
   --accent-foreground: 222 25% 4%;
+  --destructive: 0 84% 60%;
   --app-font-sans: "Inter", "Helvetica Neue", sans-serif;
   --app-font-serif: "Playfair Display", Georgia, serif;
 }
@@ -439,6 +453,23 @@
 .form-input:focus {
   border-color: hsl(var(--primary));
   box-shadow: 0 1px 0 hsl(var(--primary) / 0.3);
+  outline: none;
+}
+
+/* Remove outlines from all form elements */
+input:focus, 
+textarea:focus, 
+select:focus,
+button:focus {
+  outline: none;
+}
+
+/* Shadcn UI form components focus styles */
+[data-radix-select-trigger]:focus,
+[data-radix-textarea]:focus,
+[data-radix-input]:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* Layered parallax cards */
@@ -526,6 +557,30 @@
 
   to {
     opacity: 0;
+  }
+}
+
+@keyframes zoom-in-95 {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes zoom-out-95 {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
   }
 }
 

@@ -5,23 +5,24 @@ import { useLenis } from "./hooks/useLenis";
 import { useCursor } from "./hooks/useCursor";
 import LoadingScreen from "./components/LoadingScreen";
 import Cursor from "./components/Cursor";
-import Nav from "./components/Nav";
-import HeroSection from "./components/HeroSection";
-import MarqueeSection from "./components/MarqueeSection";
-import LayeredDepthSection from "./components/LayeredDepthSection";
-import WorkSection from "./components/WorkSection";
-import PhilosophySection from "./components/PhilosophySection";
-import CardSwiperSection from "./components/CardSwiperSection";
-import ServicesSection from "./components/ServicesSection";
-import SplitRevealSection from "./components/SplitRevealSection";
-import ProcessSection from "./components/ProcessSection";
-import StatsSection from "./components/StatsSection";
-import ShowcaseSection from "./components/ShowcaseSection";
-import TestimonialsSection from "./components/TestimonialsSection";
-import AboutSection from "./components/AboutSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
+import Nav from "./components/Nav/Nav";
+import HeroSection from "./components/Hero/HeroSection";
+import MarqueeSection from "./components/Marquee/MarqueeSection";
+import LayeredDepthSection from "./components/LayeredDepth/LayeredDepthSection";
+import WorkSection from "./components/Work/WorkSection";
+import PhilosophySection from "./components/Philosophy/PhilosophySection";
+import CardSwiperSection from "./components/CardSwiper/CardSwiperSection";
+import ServicesSection from "./components/Services/ServicesSection";
+import SplitRevealSection from "./components/SplitReveal/SplitRevealSection";
+import ProcessSection from "./components/Process/ProcessSection";
+import StatsSection from "./components/Stats/StatsSection";
+import ShowcaseSection from "./components/Showcase/ShowcaseSection";
+import TestimonialsSection from "./components/Testimonials/TestimonialsSection";
+import AboutSection from "./components/About/AboutSection";
+import ContactSection from "./components/Contact/ContactSection";
+import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { Toaster } from "@/components/ui/sonner";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,6 +86,7 @@ function AppContent({ loaded }: { loaded: boolean }) {
       </main>
       <Footer />
       <ScrollToTop />
+      <Toaster />
     </div>
   );
 }
@@ -96,7 +98,7 @@ function App() {
     <>
       {!loaded && <LoadingScreen onComplete={() => setLoaded(true)} />}
       <div
-      className="overflow-hidden"
+        className="overflow-hidden"
         style={{
           visibility: loaded ? "visible" : "hidden",
           pointerEvents: loaded ? "auto" : "none",

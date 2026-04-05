@@ -1,0 +1,24 @@
+{
+  "words": ["English", "Teacher", "Sara", "Osama"],
+  "hero": {
+    "title": "English Teacher",
+    "subtitle": "Language Learning Expert",
+    "description": "Helping students achieve fluency through personalized, engaging lessons that build confidence and practical skills.",
+    "cta": "Start Learning Journey"
+  },
+  "about": {
+    "title": "About Sara",
+    "subtitle": "Experienced English Language Educator",
+    "description": "Passionate about creating personalized learning experiences that help students achieve their language goals through structured, engaging methods.",
+    "stats": [
+      {
+        "number": "3+",
+        "label": "Years Exp."
+      },
+      {
+        "number": "100+",
+        "label": "Students."
+      }
+    ]
+  }
+}

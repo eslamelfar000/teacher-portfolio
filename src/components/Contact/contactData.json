@@ -1,0 +1,91 @@
+{
+  "contact": {
+    "title": "Let's Connect",
+    "mainTitle": "Start your English",
+    "subtitle": "learning journey",
+    "description": "I'll review your message and get back to you within 24 hours to discuss your learning journey."
+  },
+  "info": {
+    "email": "sara.osama.mowafy@gmail.com",
+    "phone": "+201144355734",
+    "location": "Online & Local\nAvailable globally",
+    "social": [
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com",
+        "icon": "Instagram"
+      },
+      {
+        "name": "Twitter", 
+        "url": "https://twitter.com",
+        "icon": "Twitter"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com",
+        "icon": "Linkedin"
+      },
+      {
+        "name": "Dribbble",
+        "url": "https://dribbble.com",
+        "icon": "Dribbble"
+      }
+    ]
+  },
+  "decorative": {
+    "quote": "Language is the road map\nof a culture."
+  },
+  "form": {
+    "fields": {
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Jane Smith",
+        "type": "text"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "jane@company.com",
+        "type": "email"
+      },
+      "project": {
+        "label": "Class Type",
+        "placeholder": "Select a service...",
+        "type": "select",
+        "options": [
+          {
+            "value": "general-english",
+            "label": "General English"
+          },
+          {
+            "value": "ielts-toefl",
+            "label": "IELTS/TOEFL Prep"
+          },
+          {
+            "value": "business-english",
+            "label": "Business English"
+          },
+          {
+            "value": "conversational",
+            "label": "Conversational Practice"
+          },
+          {
+            "value": "other",
+            "label": "Other"
+          }
+        ]
+      },
+      "message": {
+        "label": "Tell Me About Your Goals",
+        "placeholder": "Describe your current level, goals, preferred timeline...",
+        "type": "textarea",
+        "rows": 4
+      }
+    },
+    "submit": {
+      "text": "Send Message",
+      "loadingText": "Sending...",
+      "loadingIcon": "⏳",
+      "icon": "→"
+    }
+  }
+}

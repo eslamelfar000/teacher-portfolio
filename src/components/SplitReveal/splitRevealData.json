@@ -1,0 +1,42 @@
+{
+  "leftPanel": {
+    "title": "Approach",
+    "subtitle": "Methodical & Structured",
+    "content": "Building strong foundations through systematic learning and practice."
+  },
+  "rightPanel": {
+    "title": "Results", 
+    "subtitle": "Measurable Progress",
+    "content": "Tracking improvement through regular assessments and feedback."
+  },
+  "layers": {
+    "left": {
+      "far": {
+        "title": "Foundation",
+        "description": "Core grammar and vocabulary building"
+      },
+      "mid": {
+        "title": "Application", 
+        "description": "Real-world usage and context"
+      },
+      "near": {
+        "title": "Mastery",
+        "description": "Advanced fluency and confidence"
+      }
+    },
+    "right": {
+      "far": {
+        "title": "Assessment",
+        "description": "Regular testing and evaluation"
+      },
+      "mid": {
+        "title": "Refinement",
+        "description": "Fine-tuning skills and techniques"
+      },
+      "near": {
+        "title": "Excellence",
+        "description": "Native-like proficiency and expression"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "number": "01",
+    "title": "Grammar Focus",
+    "subtitle": "The foundation of fluency",
+    "description": "Master rules of English to build a solid foundation. We make grammar intuitive, logical, and practical for real-world use.",
+    "color1": "hsl(185 80% 10%)",
+    "color2": "hsl(185 60% 6%)",
+    "accent": "hsl(185 100% 55%)",
+    "icon": "◎"
+  },
+  {
+    "number": "02",
+    "title": "Vocabulary Building",
+    "subtitle": "The words that matter",
+    "description": "Expand your word bank effectively. Learn idiomatic expressions, phrasal verbs, and context-specific vocabulary that natives use.",
+    "color1": "hsl(270 40% 10%)",
+    "color2": "hsl(270 30% 6%)",
+    "accent": "hsl(270 70% 65%)",
+    "icon": "▣"
+  },
+  {
+    "number": "03",
+    "title": "Speaking Confidence",
+    "subtitle": "The art of conversation",
+    "description": "Overcome fear of speaking. Interactive sessions focused on pronunciation, fluency, and expressing complex ideas clearly.",
+    "color1": "hsl(340 40% 10%)",
+    "color2": "hsl(340 30% 6%)",
+    "accent": "hsl(340 85% 62%)",
+    "icon": "◐"
+  },
+  {
+    "number": "04",
+    "title": "Writing Precision",
+    "subtitle": "Words that cut through noise",
+    "description": "From academic essays to professional emails, learn how to structure your thoughts and write with clarity and impact.",
+    "color1": "hsl(45 40% 8%)",
+    "color2": "hsl(45 30% 5%)",
+    "accent": "hsl(45 90% 60%)",
+    "icon": "✦"
+  }
+]

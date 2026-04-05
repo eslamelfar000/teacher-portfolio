@@ -1,0 +1,38 @@
+[
+  {
+    "id": "01",
+    "title": "Read to Understand",
+    "category": "Exam Preparation",
+    "year": "2025",
+    "color": "hsl(185 40% 10%)",
+    "accent": "hsl(185 100% 55%)",
+    "description": "Building strong reading comprehension and analytical skills"
+  },
+  {
+    "id": "02",
+    "title": "Write with Clarity",
+    "category": "Business English",
+    "year": "2026",
+    "color": "hsl(340 40% 10%)",
+    "accent": "hsl(340 85% 62%)",
+    "description": "Developing structured and effective writing for exams and real-life use."
+  },
+  {
+    "id": "03",
+    "title": "Speak with Confidence",
+    "category": "General English",
+    "year": "2024",
+    "color": "hsl(270 30% 12%)",
+    "accent": "hsl(270 60% 60%)",
+    "description": "Helping students express ideas fluently and naturally."
+  },
+  {
+    "id": "04",
+    "title": "Master to Language",
+    "category": "Conversational Practice",
+    "year": "2025",
+    "color": "hsl(150 30% 10%)",
+    "accent": "hsl(150 60% 45%)",
+    "description": "Strengthening grammar, vocabulary, and pronunciation for real fluency."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Grammar",
+    "desc": "Structured rules and application",
+    "icon": "Aa"
+  },
+  {
+    "label": "Vocabulary",
+    "desc": "Contextual word acquisition",
+    "icon": "◐"
+  },
+  {
+    "label": "Speaking",
+    "desc": "Fluency and pronunciation practice",
+    "icon": "▣"
+  },
+  {
+    "label": "Listening",
+    "desc": "Comprehension of native speakers",
+    "icon": "◉"
+  },
+  {
+    "label": "Writing",
+    "desc": "Clear and precise expressions",
+    "icon": "□"
+  },
+  {
+    "label": "Reading",
+    "desc": "Analyzing complex texts",
+    "icon": "✦"
+  },
+  {
+    "label": "Idioms",
+    "desc": "Natural phrasing and slang",
+    "icon": "▣"
+  },
+  {
+    "label": "Exam Prep",
+    "desc": "Targeted strategies for tests",
+    "icon": "◉"
+  }
+]

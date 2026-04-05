@@ -1,0 +1,32 @@
+[
+  {
+    "number": "01",
+    "title": "Listening",
+    "description": "Understand every word and enjoy real conversations.",
+    "tags": ["Grammar", "Vocabulary", "Speaking"]
+  },
+  {
+    "number": "02",
+    "title": "Speaking",
+    "description": "Express yourself fluently and confidently.",
+    "tags": ["Fluency", "Pronunciation", "Confidence"]
+  },
+  {
+    "number": "03",
+    "title": "Reading",
+    "description": "Read faster, understand deeper, and enjoy stories.",
+    "tags": ["Vocabulary", "Comprehension", "Critical Thinking"]
+  },
+  {
+    "number": "04",
+    "title": "Writing",
+    "description": "Write clearly, creatively, and accurately.",
+    "tags": ["Grammar", "Structure", "Expression"]
+  },
+  {
+    "number": "05",
+    "title": "Communication & Thinking",
+    "description": "Use English to solve problems, share ideas, and connect with others.",
+    "tags": ["Collaboration", "Problem-Solving", "Expression"]
+  }
+]

@@ -69,6 +69,9 @@ module.exports = {
         "slide-out-to-top": "slide-out-to-top 0.3s ease-out",
         "slide-in-from-bottom": "slide-in-from-bottom 0.3s ease-out",
         "slide-out-to-bottom": "slide-out-to-bottom 0.3s ease-out",
+        "zoom-in": "zoom-in 0.2s ease-out",
+        "zoom-out": "zoom-out 0.2s ease-out",
+        
       },
     },
   },
