@@ -230,7 +230,7 @@ export default function AboutSection() {
         {/* Team */}
         <div>
           <p className="section-label mb-8">My Qualifications</p>
-          <div className="team-grid grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {TEAM.map((member, i) => (
               <div
                 key={member.name}

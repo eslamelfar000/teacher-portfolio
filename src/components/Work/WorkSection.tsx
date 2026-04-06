@@ -183,10 +183,10 @@ export default function WorkSection() {
             Student success<br />
             <span className="gradient-text">stories</span>
           </h2>
-          <button className="btn-outline hidden md:flex" onClick={() => {}}>
+          {/* <button className="btn-outline hidden md:flex" onClick={() => {}}>
             <span>View All</span>
             <span>→</span>
-          </button>
+          </button> */}
         </div>
       </div>
 
