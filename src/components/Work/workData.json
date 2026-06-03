@@ -2,7 +2,7 @@
   {
     "id": "01",
     "title": "Read to Understand",
-    "category": "Exam Preparation",
+    "category": "Read Between the Lines",
     "year": "2025",
     "color": "hsl(185 40% 10%)",
     "accent": "hsl(185 100% 55%)",
@@ -11,7 +11,7 @@
   {
     "id": "02",
     "title": "Write with Clarity",
-    "category": "Business English",
+    "category": "Think Clear, Write Clear",
     "year": "2026",
     "color": "hsl(340 40% 10%)",
     "accent": "hsl(340 85% 62%)",
@@ -20,7 +20,7 @@
   {
     "id": "03",
     "title": "Speak with Confidence",
-    "category": "General English",
+    "category": "Speak Like You Mean It",
     "year": "2024",
     "color": "hsl(270 30% 12%)",
     "accent": "hsl(270 60% 60%)",
@@ -29,7 +29,7 @@
   {
     "id": "04",
     "title": "Master to Language",
-    "category": "Conversational Practice",
+    "category": "From Basics to Mastery",
     "year": "2025",
     "color": "hsl(150 30% 10%)",
     "accent": "hsl(150 60% 45%)",

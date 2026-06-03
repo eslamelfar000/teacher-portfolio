@@ -1,51 +1,19 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import workData from "./workData.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const PROJECTS = [
-  {
-    id: "01",
-    title: "Read to Understand",
-    category: "Exam Preparation",
-    year: "2025",
-    color: "hsl(185 40% 10%)",
-    accent: "hsl(185 100% 55%)",
-    description: "Building strong reading comprehension and analytical skills",
-  },
-  {
-    id: "02",
-    title: "Write with Clarity",
-    category: "Business English",
-    year: "2026",
-    color: "hsl(340 40% 10%)",
-    accent: "hsl(340 85% 62%)",
-    description:
-      "Developing structured and effective writing for exams and real-life use.",
-  },
-  {
-    id: "03",
-    title: "Speak with Confidence",
-    category: "General English",
-    year: "2024",
-    color: "hsl(270 30% 12%)",
-    accent: "hsl(270 60% 60%)",
-    description: "Helping students express ideas fluently and naturally.",
-  },
-  {
-    id: "04",
-    title: "Master the Language",
-    category: "Conversational Practice",
-    year: "2025",
-    color: "hsl(150 30% 10%)",
-    accent: "hsl(150 60% 45%)",
-    description:
-      "Strengthening grammar, vocabulary, and pronunciation for real fluency.",
-  },
-];
+const PROJECTS = workData;
 
-function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: number }) {
+function ProjectCard({
+  project,
+  index,
+}: {
+  project: (typeof PROJECTS)[0];
+  index: number;
+}) {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -60,14 +28,14 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: n
           y: 0,
           opacity: 1,
           duration: 1,
-          ease: 'power3.out',
+          ease: "power3.out",
           scrollTrigger: {
             trigger: cardRef.current,
-            start: 'top 85%',
+            start: "top 85%",
             once: true,
           },
           delay: index * 0.1,
-        }
+        },
       );
     }, cardRef);
 
@@ -78,19 +46,21 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: n
     <div
       ref={cardRef}
       className="project-card group relative overflow-hidden"
-      style={{ opacity: 0, borderRadius: '4px' }}
+      style={{ opacity: 0, borderRadius: "4px" }}
     >
       {/* Background */}
       <div
         className="aspect-[4/3] w-full relative overflow-hidden project-card-img"
-        style={{ background: `linear-gradient(135deg, ${project.color} 0%, hsl(222 25% 5%) 100%)` }}
+        style={{
+          background: `linear-gradient(135deg, ${project.color} 0%, hsl(222 25% 5%) 100%)`,
+        }}
       >
         {/* Decorative shapes */}
         <div
           className="absolute top-1/4 right-1/4 w-40 h-40 rounded-full opacity-30 project-card-img"
           style={{
             background: `radial-gradient(circle, ${project.accent} 0%, transparent 70%)`,
-            filter: 'blur(20px)',
+            filter: "blur(20px)",
           }}
         />
 
@@ -99,7 +69,7 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: n
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage: `linear-gradient(${project.accent}40 1px, transparent 1px), linear-gradient(90deg, ${project.accent}40 1px, transparent 1px)`,
-            backgroundSize: '40px 40px',
+            backgroundSize: "40px 40px",
           }}
         />
 
@@ -122,7 +92,10 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: n
 
         {/* Content on hover */}
         <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-400">
-          <p className="text-xs tracking-widest uppercase mb-2" style={{ color: project.accent }}>
+          <p
+            className="text-xs tracking-widest uppercase mb-2"
+            style={{ color: project.accent }}
+          >
             {project.category}
           </p>
           <p className="text-sm text-[hsl(var(--foreground)/0.8)] leading-relaxed">
@@ -133,10 +106,16 @@ function ProjectCard({ project, index }: { project: typeof PROJECTS[0]; index: n
 
       <div className="p-6 border border-[hsl(var(--border))] border-t-0">
         <div className="flex items-start justify-between">
-          <h3 className="text-xl font-semibold tracking-tight">{project.title}</h3>
-          <span className="text-xs text-[hsl(var(--muted-foreground))] font-mono">{project.year}</span>
+          <h3 className="text-xl font-semibold tracking-tight">
+            {project.title}
+          </h3>
+          <span className="text-xs text-[hsl(var(--muted-foreground))] font-mono">
+            {project.id}
+          </span>
         </div>
-        <p className="text-sm text-[hsl(var(--muted-foreground))] mt-1">{project.category}</p>
+        <p className="text-sm text-[hsl(var(--muted-foreground))] mt-1">
+          {project.category}
+        </p>
       </div>
     </div>
   );
@@ -157,13 +136,13 @@ export default function WorkSection() {
           opacity: 1,
           duration: 0.9,
           stagger: 0.15,
-          ease: 'power3.out',
+          ease: "power3.out",
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: 'top 80%',
+            start: "top 80%",
             once: true,
           },
-        }
+        },
       );
     }, sectionRef);
 
@@ -171,16 +150,27 @@ export default function WorkSection() {
   }, []);
 
   return (
-    <section id="work" ref={sectionRef} className="py-32 px-8 max-w-7xl mx-auto">
+    <section
+      id="work"
+      ref={sectionRef}
+      className="py-32 px-8 max-w-7xl mx-auto"
+    >
       <div className="mb-20">
-        <p ref={labelRef} className="section-label mb-4" style={{ opacity: 0 }}>Featured Lessons</p>
+        <p ref={labelRef} className="section-label mb-4" style={{ opacity: 0 }}>
+          Featured Lessons
+        </p>
         <div className="flex items-end justify-between">
           <h2
             ref={titleRef}
             className="display-text"
-            style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)', fontWeight: 700, opacity: 0 }}
+            style={{
+              fontSize: "clamp(2.5rem, 6vw, 5rem)",
+              fontWeight: 700,
+              opacity: 0,
+            }}
           >
-            Student success<br />
+            Student success
+            <br />
             <span className="gradient-text">stories</span>
           </h2>
           {/* <button className="btn-outline hidden md:flex" onClick={() => {}}>

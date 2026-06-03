@@ -12,23 +12,13 @@
     "social": [
       {
         "name": "Instagram",
-        "url": "https://instagram.com",
+        "url": "https://www.instagram.com/saraosamamowafy",
         "icon": "Instagram"
       },
       {
-        "name": "Twitter", 
-        "url": "https://twitter.com",
-        "icon": "Twitter"
-      },
-      {
-        "name": "LinkedIn",
-        "url": "https://linkedin.com",
-        "icon": "Linkedin"
-      },
-      {
-        "name": "Dribbble",
-        "url": "https://dribbble.com",
-        "icon": "Dribbble"
+        "name": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100080113011507",
+        "icon": "Facebook"
       }
     ]
   },
@@ -39,12 +29,12 @@
     "fields": {
       "name": {
         "label": "Your Name",
-        "placeholder": "Jane Smith",
+        "placeholder": "Enter your name",
         "type": "text"
       },
       "email": {
         "label": "Email Address",
-        "placeholder": "jane@company.com",
+        "placeholder": "Enter your email",
         "type": "email"
       },
       "project": {
@@ -57,20 +47,12 @@
             "label": "General English"
           },
           {
-            "value": "ielts-toefl",
-            "label": "IELTS/TOEFL Prep"
+            "value": "preparatory-stage",
+            "label": "Preparatory Stage"
           },
           {
-            "value": "business-english",
-            "label": "Business English"
-          },
-          {
-            "value": "conversational",
-            "label": "Conversational Practice"
-          },
-          {
-            "value": "other",
-            "label": "Other"
+            "value": "secondary-stage",
+            "label": "Secondary Stage"
           }
         ]
       },

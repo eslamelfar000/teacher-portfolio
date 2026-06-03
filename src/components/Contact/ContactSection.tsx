@@ -28,9 +28,7 @@ import {
   Mail,
   MessageCircle,
   Instagram,
-  Twitter,
-  Linkedin,
-  Dribbble,
+  Facebook,
 } from "lucide-react";
 import contactData from "./contactData.json";
 
@@ -61,9 +59,7 @@ export default function ContactSection() {
       }>;
     } = {
       Instagram,
-      Twitter,
-      Linkedin,
-      Dribbble,
+      Facebook,
     };
     return icons[iconName] || null;
   };
@@ -198,6 +194,8 @@ export default function ContactSection() {
               <p className="section-label mb-3">Email</p>
               <a
                 href={`mailto:${data.info.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-lg hover:text-[hsl(var(--primary))] transition-colors duration-300 cursor-none flex items-center gap-3"
               >
                 <Mail size={20} className="flex-shrink-0" />
@@ -208,6 +206,8 @@ export default function ContactSection() {
               <p className="section-label mb-3">WhatsApp</p>
               <a
                 href={`https://wa.me/${data.info.phone}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-lg hover:text-[hsl(var(--primary))] transition-colors duration-300 cursor-none flex items-center gap-3"
               >
                 <MessageCircle size={20} className="flex-shrink-0" />
